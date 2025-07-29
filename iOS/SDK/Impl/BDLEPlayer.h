@@ -72,6 +72,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setStretchMode:(BDLEPlayerStretchMode)stretchMode;
 
+- (void)setStretchMode:(BDLEPlayerStretchMode)stretchMode stretchArea:(NSString *)area;
+
 - (void)setSkipHeadTail:(BOOL)enableSkip;
 
 - (void)setDanmaku:(BDLEPPDanmakuBean *)danmaku;

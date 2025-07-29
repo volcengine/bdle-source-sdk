@@ -168,6 +168,7 @@ FOUNDATION_EXTERN NSString * const kBDLEPPPlayStatus_ADS;
 @property (nonatomic, assign) NSInteger shuffle;
 @property (nonatomic, assign) float speed;
 @property (nonatomic, assign) NSInteger stretch;
+@property (nonatomic, copy) NSString *stretchArea;
 @property (nonatomic, assign) NSInteger skip;
 @property (nonatomic, assign) NSInteger inheritConfig;
 @property (nonatomic, assign) NSInteger featureConfig;
@@ -286,6 +287,7 @@ FOUNDATION_EXTERN NSString * const kBDLEPPPlayStatus_ADS;
 
 @property (nonatomic, copy) NSString *vid;
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *episodeTitle;
 @property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *creator;
 @property (nonatomic, copy) NSString *artist;
@@ -491,6 +493,7 @@ FOUNDATION_EXTERN NSString * const kBDLEPPPlayStatus_ADS;
 @interface BDLEPPStretchModeCmd : BDLEPPCmd
 
 @property (nonatomic, assign) NSInteger stretch;
+@property (nonatomic, copy) NSString *stretchArea;
 
 - (instancetype)init __attribute__((unavailable("use +cmd instead")));
 

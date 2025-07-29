@@ -237,6 +237,14 @@
     [self.connection sendRequest:request completionHandler:nil];
 }
 
+- (void)setStretchMode:(BDLEPlayerStretchMode)stretchMode stretchArea:(NSString *)area {
+    BDLEPPStretchModeCmd *cmd = [BDLEPPStretchModeCmd cmd];
+    cmd.stretch = stretchMode;
+    cmd.stretchArea = area;
+    BDLEPPSetStretchModeRequest *request = [BDLEPPSetStretchModeRequest requestWithBody:cmd];
+    [self.connection sendRequest:request completionHandler:nil];
+}
+
 - (void)setSkipHeadTail:(BOOL)enableSkip {
     BDLEPPSkipInfoCmd *cmd = [BDLEPPSkipInfoCmd cmd];
     cmd.skip = enableSkip ? 1 : 0;
