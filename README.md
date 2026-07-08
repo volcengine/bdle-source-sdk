@@ -43,3 +43,8 @@ achieve iOS screen mirroring, SSDP device discovery, and SOAP device control.
 ## Android
 
 Coming Soon.
+
+## Security and privacy
+
+This project takes security seriously.
+For vulnerability reporting and supported versions, see [SECURITY.md](SECURITY.md)
